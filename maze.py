@@ -35,7 +35,7 @@ class Player(GameSprite):
             self.rect.x += self.speed
         if keys[pygame.K_a] and self.rect.left > 0:
             self.rect.x -= self.speed
-player = GameSprite("hero,png", (20, HEIGHT-20), 5)
+player = Player("hero.png", (20, HEIGHT-20), 5)
 enemy = GameSprite("cyborg.png", (WIDTH-100, HEIGHT/2), 5)
 gold = GameSprite("treasure.png", (WIDTH-40, HEIGHT-40), 0)
 game_over = False
